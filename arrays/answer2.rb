@@ -1,6 +1,6 @@
 # Prompt user for their age
 puts 'what is your current age?'
-# Cahnge value to integer
+# Change value to integer
 years = gets.chomp.to_i
 # Prompt user for citizenship status
 puts 'Are you a citizen? Please enter (y/n)'
