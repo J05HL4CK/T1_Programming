@@ -8,5 +8,5 @@ def cook(item, time)
 end
 
 # the same arguments are passed on the parameters we set
-cook('lizard meat', 5)
-cook('eye of neut', 8)
+cook("lizard meat", 5)
+cook("eye of neut", 8)
