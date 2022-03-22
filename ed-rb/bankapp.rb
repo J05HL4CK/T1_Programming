@@ -2,9 +2,9 @@ def banking_app
     # defined variables for menu
     credit = 0
     welc_greet = "welcome to the bank app"
-    bal_greet = "Your current balance is $" + credit.to_s
-    opt_string = "Please choose from the following options"
-    Options = ["Balance"]
+    bal_greet = 'Your current balance is $' + credit.to_s
+    opt_string = 'Please choose from the following options'
+    Options = [credit, ]
     # end 
     #start menu
     puts welc_greet
