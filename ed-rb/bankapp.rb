@@ -43,16 +43,14 @@ def banking_app
                 else 
                     puts "You have insufficient funds, please select a different amount"      
             
-        end
-        when "exit"
-            user_cont = false
+                end
+    when "exit"
+         user_cont = false
 
         else 
             puts "Invalid selection"
         end
     end
-
-    
     
 
 
