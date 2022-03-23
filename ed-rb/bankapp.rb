@@ -46,9 +46,11 @@ def banking_app
                 end
     when "exit"
          user_cont = false
+         system "clear"
 
         else 
             puts "Invalid selection"
+            system "clear"
         end
     end
     
