@@ -9,13 +9,16 @@
 # name
 # meals
 require 'colorize'
+# name with PascalCase 
 class Pet
     attr_reader :type #read acces to type of animal
     attr_accessor :name, :meals
+    @@total_pets = 0
     def initialize(type,name)
         @type = type
         @name = name
         @meals = []
+        @@total_pets += 1
 
         
     end
@@ -31,8 +34,11 @@ class Pet
         end
         puts " That's a whopping #{@meals.sum {|h|h[:amount]}} grams!! "
     end
+    def self.total_pets
+        @@total_pets
+    end
     def to_s
-        return "Pet type: #{@type}\tName: #{@name.capitalize}. How cute!"
+        return "Pet type: #{@type}\nName: #{@name.capitalize}."
     end
 end
 
