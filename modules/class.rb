@@ -46,11 +46,25 @@ dog = Pet.new("dog", "Winston")
 dog.eat(10, "morning")
 dog.eat(30, "arvo")
 dog.display_daily
-puts dog
-puts dog.name
-puts dog.meals
 # getter/ setter for attributes ar so common in ruby there is a shortcut
 # attr_reader - read access
 # attr_write - write access
 # attr_accessor - read and write
+puts dog
+puts dog.name
+puts dog.meals
 
+# Use the super method to execute the code defined in the parent class from the child method
+# 
+class Dog < Pet
+    attr_accessor :breed
+    def initialize(name, breed)
+        super("dog", name)
+        @breed = breed
+        
+    end
+end
+# dogs are pets with more! 
+# when Dog is instantiated, the instance has access to everything in pet 
+#  the instance also has access to everything in pet
+roy = Dog.new("Roy", "chihuahua")
